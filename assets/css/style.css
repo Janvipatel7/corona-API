@@ -1,0 +1,69 @@
+body{
+    background-color: #d2f5f5;
+}
+.box-1{
+    width: 320px;
+    height: auto;
+    background: #f4f8fd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px auto;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.card-body {
+    min-height: 1px;
+    padding: 1.5rem;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    flex: 0 0 auto;
+}
+
+.icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-gradient-red{
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(87deg, #11cdef 0, #1171ef 100%) !important;
+}
+
+.bg-gradient-green {
+    background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%) !important;
+}
+
+.bg-gradient-orange {
+    background: linear-gradient(87deg, #fb6340 0, #fbb140 100%) !important;
+}
+
+input.form-control {
+    text-align: center !important;
+}

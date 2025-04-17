@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Corona API Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <div class="container my-5">
-        <h1>CORONA-API </h1>
-        <div>
-            <label for="searchName">Enter Any City Name :-</label>
-            <input type="text" name="text" class="form-control" id="searchName">
-        </div>
-        <div class="my-3">
-            <button class="btn btn-primary" id="checkbtn">Check</button>
-        </div>
-        <div>
-            <p id="ans"></p>
-        </div>
-    </div>
 
-    <script src="./assets/js/bootstrap.js"></script>
+<body>
+    <section>
+        <div class="container">
+            <h2 class="text-center py-3">Novel Coronavirus Tracker</h2>
+            <div class="search pb-3 text-center">
+                <div class="pb-2">
+                    <label for="name">Enter Your State Name : </label>
+                    <input type="text" name="name" class="form-control mx-auto w-25 mt-2" id="stateName" required >
+                </div>
+                <button class="btn btn-primary" id="checkbtn">Check</button>
+                <button class="btn btn-primary" id="clearbtn">Clear</button>
+            </div>
+            <div class="box-1">
+                <div class="card card-stats">
+                    <div class="card-body">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted">Total Cases</h5>
+                            <span class="h2 font-weight-bold total_cases color-red count" id="totalCase">0</span>
+                        </div>
+                        <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                            <i class="fas fa-users fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-stats">
+                    <div class="card-body">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted">Deaths</h5>
+                            <span class="h2 font-weight-bold deaths color-blue count" id="deaths">0</span>
+                        </div>
+                        <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+                            <i class="fas fa-procedures fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-stats">
+                    <div class="card-body">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted">Recovered</h5>
+                            <span class="h2 font-weight-bold recovered color-green count" id="recovered">0</span>
+                        </div>
+                        <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                            <i class="fas fa-child fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card card-stats">
+                    <div class="card-body">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted">New Cases Today</h5>
+                            <span class="h2 font-weight-bold new_cases color-orange count">0</span>
+                        </div>
+                        <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                            <i class="fas fa-bell fs-4"></i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
