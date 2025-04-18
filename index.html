@@ -15,12 +15,14 @@
         <div class="container">
             <h2 class="text-center py-3">Novel Coronavirus Tracker</h2>
             <div class="search pb-3 text-center">
-                <div class="pb-2">
-                    <label for="name">Enter Your State Name : </label>
-                    <input type="text" name="name" class="form-control mx-auto w-25 mt-2" id="stateName" required >
+                <div class="pb-3">
+                    <input type="text" for="name" class="form-control text-start rounded-2 search-btn mx-auto w-25 mt-2" id="stateName" required autocomplete="off" placeholder="Enter your State Name....">
+              
                 </div>
-                <button class="btn btn-primary" id="checkbtn">Check</button>
-                <button class="btn btn-primary" id="clearbtn">Clear</button>
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="corona-btn" id="checkbtn">Check</button>
+                    <button class="corona-btn" id="clearbtn">Clear</button>
+                </div>
             </div>
             <div class="box-1">
                 <div class="card card-stats">
